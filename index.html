@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101611">
+  <meta name="description" content="Rally — a fresh, fast sports hub. Explore fixtures, follow live scores, and try a no-money picks demo.">
+  <title>Rally — Sport, in your corner</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="demo-ribbon"><span class="pulse-dot"></span> PLAYGROUND MODE <span class="ribbon-divider">·</span> Picks are for fun — no real money</div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Rally home"><span class="brand-mark">r<span>↗</span></span><span>rally<span class="brand-period">.</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#home">Explore</a><a class="nav-link" href="#live">Live <span class="live-mini"></span></a><a class="nav-link" href="#highlights">Highlights</a>
+    </nav>
+    <div class="top-actions"><button class="icon-btn search-toggle" aria-label="Search matches" title="Search">⌕</button><button class="outline-btn" id="loginBtn">Log in</button><button class="join-btn" id="joinBtn">Join Rally <span>↗</span></button><button class="avatar-btn" aria-label="Your account">JD</button></div>
+  </header>
+  <main id="home">
+    <section class="hero page-wrap">
+      <div class="hero-copy"><div class="eyebrow"><span class="spark">✳</span> MORE THAN THE SCORE</div><h1>Make every<br>match <em>matter.</em></h1><p>Your front-row seat to the sports you love. Follow the action, find your next favorite, and make a little game of it.</p><div class="hero-cta"><a class="primary-cta" href="#fixtures">Find your match <span>↓</span></a><div class="social-proof"><div class="face-stack"><span>⚽</span><span>🏀</span><span>🎾</span></div><span>Good games. Great company.</span></div></div></div>
+      <div class="hero-art" aria-label="Abstract illustration of a football pitch"><div class="art-glow"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-ball">⚽</div><div class="art-label label-top"><span class="live-mini"></span> THE GAME IS ON</div><div class="art-score"><span class="score-team">NORTH CITY</span><strong>2 <small>:</small> 1</strong><span class="score-team">RIVER ATHLETIC</span><div class="score-minute">67′ <span>SECOND HALF</span></div></div><div class="art-tag">PLAY<br><b>YOUR WAY</b> ↗</div><div class="stadium-lines"></div></div>
+    </section>
+    <section class="ticker" aria-label="Live match ticker"><div class="ticker-label"><span class="live-mini"></span> LIVE NOW</div><div class="ticker-track"><div class="ticker-item"><span class="sport-ball">⚽</span> North City <b>2 — 1</b> River Athletic <small>67′</small></div><div class="ticker-item"><span class="sport-ball">🏀</span> Metro Kings <b>81 — 76</b> Coastline <small>Q4 · 4:12</small></div><div class="ticker-item"><span class="sport-ball">🎾</span> A. Rivera <b>6–4, 3–2</b> J. Novak <small>SET 2</small></div><div class="ticker-item"><span class="sport-ball">⚽</span> United FC <b>0 — 0</b> Highland <small>28′</small></div></div></section>
+    <div class="page-wrap content-grid">
+      <section class="main-column" id="fixtures">
+        <div class="section-heading"><div><div class="eyebrow muted-eyebrow">YOUR DAILY LINEUP</div><h2>Find your <em>game.</em></h2></div><a class="text-link" href="#all-fixtures">All fixtures <span>↗</span></a></div>
+        <div class="sport-tabs" role="tablist" aria-label="Filter by sport"><button class="sport-tab selected" data-sport="all" role="tab">✦ <span>All sports</span></button><button class="sport-tab" data-sport="Football" role="tab">⚽ <span>Football</span></button><button class="sport-tab" data-sport="Basketball" role="tab">🏀 <span>Basketball</span></button><button class="sport-tab" data-sport="Tennis" role="tab">🎾 <span>Tennis</span></button><button class="sport-tab" data-sport="Hockey" role="tab">🏒 <span>Hockey</span></button></div>
+        <div class="match-toolbar"><div class="day-picker"><button aria-label="Previous day">‹</button><span>Today <small>· 21 Nov</small></span><button aria-label="Next day">›</button></div><div class="view-options"><button class="view-chip active">Popular</button><button class="view-chip">Starting soon</button></div></div>
+        <div class="matches" id="matchList" aria-live="polite"></div>
+        <div class="load-more-wrap"><button class="load-more" id="loadMore">See all fixtures <span>↓</span></button></div>
+        <section class="promo-card" id="highlights"><div class="promo-icon">✳</div><div><span class="eyebrow">THE RALLY ROUNDUP</span><h3>Big moments, minus the noise.</h3><p>Catch the stories, stats, and standout plays shaping this week in sport.</p></div><a class="promo-arrow" href="#stories" aria-label="Explore highlights">↗</a><div class="promo-decoration">R</div></section>
+      </section>
+      <aside class="sidebar" id="live">
+        <div class="live-card"><div class="sidebar-title"><div><span class="live-pulse"></span><h3>In the moment</h3></div><button class="more-btn" aria-label="More live matches">···</button></div><p class="sidebar-subtitle">The games everyone's watching.</p><div class="live-match"><div class="live-league">⚽ <span>PREMIER DIVISION</span><span class="live-time">67′ LIVE</span></div><div class="live-teams"><span>North City</span><b>2 <i>:</i> 1</b><span>River Athletic</span></div><div class="live-stats"><span>Possession <b>58%</b></span><div class="stat-track"><i style="width:58%"></i></div><span>Shots <b>12 — 8</b></span></div></div><div class="live-match"><div class="live-league">🏀 <span>PRO BASKETBALL</span><span class="live-time">Q4 · 4:12</span></div><div class="live-teams"><span>Metro Kings</span><b>81 <i>—</i> 76</b><span>Coastline</span></div><div class="live-stats"><span>Quarter <b>4th</b></span><div class="stat-track"><i style="width:63%"></i></div><span>Lead changes <b>9</b></span></div></div><a class="live-all" href="#fixtures">See all live games <span>→</span></a></div>
+        <div class="slip-card"><div class="slip-header"><div><span class="slip-icon">＋</span><h3>Your picks</h3></div><span class="pick-count" id="pickCount">0</span></div><div id="slipEmpty" class="slip-empty"><div class="empty-ball">◎</div><b>Your game, your call.</b><p>Tap an outcome to add it to your picks.</p></div><div id="slipPicks" class="slip-picks"></div><div class="stake-area" id="stakeArea" hidden><label for="stakeInput">Demo stake <span>POINTS</span></label><div class="stake-input-wrap"><span>✦</span><input id="stakeInput" inputmode="decimal" type="number" min="1" placeholder="Enter points" value="10"><button id="clearSlip" title="Clear picks" aria-label="Clear picks">×</button></div><div class="quick-stakes"><button data-stake="5">5</button><button data-stake="10">10</button><button data-stake="25">25</button><button data-stake="50">50</button></div><div class="return-row"><span>Possible points <small>· just for fun</small></span><b id="potentialReturn">0.00</b></div><button class="demo-submit" id="demoSubmit">Try your picks <span>→</span></button><p class="slip-disclaimer">Demo only. No account, deposits, or cash prizes.</p></div></div>
+        <div class="responsible-note"><span>♡</span><p><b>Keep it a good thing.</b><br>This is a free-to-play demo. Play for fun, never for money.</p></div>
+      </aside>
+    </div>
+    <section class="bottom-feature page-wrap"><div><span class="eyebrow">SPORT IS BETTER TOGETHER</span><h2>Find your people.<br><em>Feel every play.</em></h2></div><p>From the first whistle to the final buzzer, Rally brings fans closer to the moments that move them. Pick a side, follow the story, and enjoy the ride.</p><a class="primary-cta" href="#fixtures">Explore today's games <span>→</span></a></section>
+  </main>
+  <footer><div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">r<span>↗</span></span><span>rally<span class="brand-period">.</span></span></a><span>For the love of the game.</span></div><div class="footer-links"><a href="#about">About Rally</a><a href="#responsible">Play responsibly</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a></div><div class="footer-age">18+ <span>·</span> Demo experience only</div><div class="copyright">© 2026 Rally Sports Studio. All rights reserved.</div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="search-modal" id="searchModal" aria-hidden="true"><div class="search-box"><button class="search-close" aria-label="Close search">×</button><label for="searchInput">Find a team or match</label><input id="searchInput" placeholder="Try ‘North City’"><div class="search-hint">Search today's lineup</div></div></div>
+  <script src="app.js"></script>
+</body>
+</html>
